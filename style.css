@@ -1,0 +1,106 @@
+@font-face {
+    font-family: Font;
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Font;
+    width: 100svw;
+    height: 100svh;
+    background-color: hsl(47, 88%, 63%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: #fff;
+    width: 340px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 0px 0px hsl(0, 0%, 7%);
+    padding: 20px;
+    gap: 15px;
+    border: 1px solid hsl(0, 0%, 7%);
+}
+
+main img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.status {
+    background-color: hsl(47, 88%, 63%);
+    padding: 5px 15px 5px 15px;
+    font-weight: 800;
+    border-radius: 5px;
+}
+
+.publish-date {
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.title {
+    text-decoration: none;
+    color: hsl(0, 0%, 7%);
+    font-size: calc(1em + 1vmin);
+    font-weight: 800;
+    transition: all 0.15s ease-in-out;
+}
+
+.title:hover {
+    color: hsl(47, 88%, 63%);
+}
+
+a:visited {
+    text-decoration: none;
+    color: hsl(0, 0%, 7%);
+}
+
+.description {
+    color: hsl(0, 0%, 42%);
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.name {
+    font-weight: 700;
+    transition: all 0.15s ease-in-out;
+}
+
+.profile img {
+    aspect-ratio: 1/1;
+    width: 30px;
+    transition: all 0.15s ease-in-out;
+}
+
+.profile img:hover {
+    cursor: pointer;
+    transform: translateY(-1px);
+}
+
+.name:hover {
+    cursor: pointer;
+    color: hsl(47, 88%, 63%);
+}
+
+@media only screen and (max-width: 400px) {
+    main {
+        width: 280px;
+    }
+}
